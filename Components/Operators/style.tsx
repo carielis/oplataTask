@@ -13,6 +13,14 @@ export const Select = styled.div`
                     padding-top: 50px;
                     box-shadow: 0px 0px 23px -8px #000000;
                     margin-left: 0 auto;
+                    @media screen and (max-device-width: 768px) {
+                    width: 200px;
+                    height: 50px;
+                    margin-left: auto;
+                    margin-left: auto;
+                    padding-top: 60px;
+                    } 
+
                  :hover {
                     transition: 1s;
                     width: 110px;

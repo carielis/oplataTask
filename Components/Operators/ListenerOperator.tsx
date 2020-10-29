@@ -1,7 +1,7 @@
 import Link from "next/link"
 import {A, Select} from "./style";
 
-let Listener = ({operators}) => {
+const Listener = ({operators}) => {
     return (
         <>
             {operators.map((p) =>

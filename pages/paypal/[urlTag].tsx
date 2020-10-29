@@ -14,9 +14,17 @@ const Pages = styled.div`
     background-color: #333333;
     margin-top: 260px;
     border-radius: 30px;
-`
+    
+    @media screen and (max-device-width: 768px) {
+     margin-top: 340px;
+     width: 255px;
+     padding: 35px;
+     padding-left: 10px;
+    }
+    
+`;
 
-let inputPage = () => {
+const inputPage = () => {
     const router = useRouter();
         return (
         <>
@@ -24,7 +32,6 @@ let inputPage = () => {
                 <Pages>
                     <div><h3>Пополнение счета {router.query.urlTag}</h3></div>
                     <InputBox />
-
                 </Pages>
             </Header>
 

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-let Header = ({title, children}) => {
+const Header = ({title, children}) => {
     return (
         <>
             <Head>

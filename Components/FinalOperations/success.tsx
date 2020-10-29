@@ -1,4 +1,4 @@
-import {Btn, Overlay} from "./style";
+import { Overlay} from "./style";
 import Router from "next/router";
 
 let Success = () => {
@@ -8,7 +8,7 @@ let Success = () => {
                 <div>
                     Операция прошла успешно, деньги будут начислены в течении часа!
                 </div>
-                <div><Btn onClick={() => Router.replace('/')}>Принять</Btn></div>
+                <div><button onClick={() => Router.replace('/')}>Принять</button></div>
             </Overlay>
 
         </>

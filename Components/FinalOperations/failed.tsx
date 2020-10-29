@@ -1,12 +1,12 @@
 import Router from "next/router";
-import {Btn, Overlay} from "./style";
+import {Overlay} from "./style"
 let Failed = ({set}) => {
     return (
         <>
          <Overlay>
           <div>
               Во время операции произошел сбой, повторите попытку!
-              <div><Btn onClick={() => Router.replace('/')}>Принять</Btn><Btn onClick={() => set()} >Закрыть</Btn></div>
+              <div><button onClick={() => Router.replace('/')}>Принять</button><button onClick={() => set()} >Закрыть</button></div>
           </div>
          </Overlay>
         </>

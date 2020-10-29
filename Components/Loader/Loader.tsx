@@ -1,6 +1,6 @@
 import {Overlay,Position,Roller,Div} from "./style"
 
-let Loader = () => {
+const Loader = () => {
     return (
         <>
             <Overlay>
