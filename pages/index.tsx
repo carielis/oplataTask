@@ -1,7 +1,29 @@
 import List from "../Components/Operators/ListenerOperator";
 import Header from "../Components/Header/Header";
 import {useState} from "react";
-import style from "./styles"
+import styled from "styled-components";
+
+const Container = styled.div`
+                margin-left: auto;
+                margin-right: auto;
+                display: grid;
+                grid-template-columns: 20em 20em 20em 20em;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 0px 0px;   
+`;
+
+const Page = styled.div`
+               background-size: cover;
+               padding-top: 100px;
+               padding-left: 0px;          
+`
+
+const Style = {
+    Page : Page,
+    Container : Container
+}
+
+
 
 let Mains = () => {
     const [operators] = useState([
@@ -13,12 +35,12 @@ let Mains = () => {
   return (
       <>
         <Header title="Main page">
-            <style.Page>
-                <style.Container>
+            <Style.Page>
+                <Style.Container>
                     <List operators={operators} />
 
-                </style.Container>
-            </style.Page>
+                </Style.Container>
+            </Style.Page>
         </Header>
       </>
   )

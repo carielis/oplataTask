@@ -1,6 +1,6 @@
 import Router from "next/router";
 import {Btn, Overlay} from "./style";
-let failed = ({set}) => {
+let Failed = ({set}) => {
     return (
         <>
          <Overlay>
@@ -13,4 +13,4 @@ let failed = ({set}) => {
     )
 }
 
-export default failed;
+export default Failed;

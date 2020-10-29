@@ -1,7 +1,7 @@
 import {Btn, Overlay} from "./style";
 import Router from "next/router";
 
-let success = () => {
+let Success = () => {
     return (
         <>
             <Overlay>
@@ -15,4 +15,4 @@ let success = () => {
     )
 }
 
-export default success;
+export default Success;
