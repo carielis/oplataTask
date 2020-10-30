@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
                 width: 100%;
                 display: block;
                 color: #FFFFFF;
+                margin-bottom: 10px;
                 background-color: #333333;
                 padding: 10px;
                 font-size: 30px;
@@ -94,7 +95,7 @@ export const Pages = styled.div`
     border-radius: 30px;
     
     @media screen and (max-device-width: 768px) {
-     margin-top: 340px;
+     margin-top: 240px;
      width: 255px;
      padding: 35px;
      padding-left: 10px;
