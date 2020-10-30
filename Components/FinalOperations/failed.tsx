@@ -1,14 +1,15 @@
 import Router from "next/router";
-import {Overlay} from "./style"
+import {Overlay, Position} from "./style"
 import React from "react";
-let Failed : React.FC<{set: any}> = ({set}) => {
+
+let Failed : React.FC<{seter : any}> = ({seter}) => {
     return (
         <>
          <Overlay>
-          <div>
+          <Position>
               Во время операции произошел сбой, повторите попытку!
-              <div><button onClick={() => Router.replace('/')}>Принять</button><button onClick={() => set()} >Закрыть</button></div>
-          </div>
+              <div><button onClick={() => Router.replace('/')}>Принять</button><button onClick={() => seter()} >Закрыть</button></div>
+          </Position>
          </Overlay>
         </>
     )

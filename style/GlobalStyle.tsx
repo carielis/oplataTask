@@ -19,6 +19,7 @@ export const GlobalStyles = createGlobalStyle`
                 margin: 0;
                 background-size: 100%;
                 background-color: #F8F8FF ;
+                min-height: 100px
               }
               button {
                 border: 0;
@@ -88,7 +89,7 @@ export const Pages = styled.div`
     width: 20em;
     text-align:center;
     padding: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     color: white;
     background-color: #333333;
     margin-top: 260px;
@@ -108,11 +109,10 @@ export const Container = styled.div`
                 margin-right: auto;
                 display: grid;
                 grid-template-columns: 20em 20em 20em 20em;
-                grid-template-rows: 1fr 1fr 1fr;
                 gap: 0px 0px; 
                 @media screen and (max-device-width: 768px) {
-                margin-top: 9em;
-                grid-template-columns: 20em;
+                margin-top: 3.5em;
+                grid-template-columns: 100%;
                 }            
                 overflow: auto;
                   

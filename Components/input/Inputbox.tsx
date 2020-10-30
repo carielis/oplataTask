@@ -9,7 +9,7 @@ import Failed from "../FinalOperations/failed";
 const InputBox : React.FC = () => {
     enum status  {success = "success", failed  = "failed" , close   = "close"}
     const [isLoad,setLoad]  = useState<boolean>(false)
-    const [Api, setApi] = useState<string>(status.close)
+    const [Api, setApi] = useState<string>("close")
     const [disabled, setDisabled] = useState<boolean>(false)
     const  handleSubmit  =  (event: Event) => {
          event.preventDefault();
@@ -34,8 +34,8 @@ const InputBox : React.FC = () => {
        <>
            {isLoad && <Loader/> }
            {(Api === status.success) && <Success /> }
-           {(Api === status.failed ) && <Failed set={() => setApi(status.close)}/>}
-           <form  onSubmit={() => {handleSubmit(event); }}>
+           {(Api === status.failed ) && <Failed seter={setApi(status.close)}/>}
+           <form  onSubmit={() => {handleSubmit(event);}}>
                <div className="block">
                    <InputMask
                        placeholder="Введите номер"

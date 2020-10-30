@@ -16,4 +16,11 @@ export const Overlay = styled.div`
                     padding-top: 14em;
                 
 `
+export const Position = styled.div`
+                
+                padding-top: 120px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 16em;
+`
 

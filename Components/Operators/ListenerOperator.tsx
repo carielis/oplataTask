@@ -2,7 +2,13 @@ import Link from "next/link"
 import {A, Select} from "./style";
 import React from "react";
 
-const Listener: React.FC<{ operators: any }> = ({operators}) => {
+interface iOperators {
+    id      : number,
+    nameTag : string,
+    urlTag  : string
+}
+
+const Listener: React.FC<{ operators: iOperators[] }> = ({operators}) => {
     return (
         <>
             {operators.map((p) =>

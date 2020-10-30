@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Select = styled.div`
                     margin-top: 20px;
-                    width: 100px;
+                    width: 110px;
                     height: 50px;
                     padding-top: 10px;
                     text-align: center;
@@ -16,8 +16,11 @@ export const Select = styled.div`
                     @media screen and (max-device-width: 768px) {
                     width: 200px;
                     height: 50px;
-                    margin-left: auto;
-                    margin-right: auto;
+                    margin: 0 auto;
+                    margin-top: 30px;
+                    
+                
+                    
                     } 
 
                  :hover {
