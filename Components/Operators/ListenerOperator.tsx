@@ -1,7 +1,8 @@
 import Link from "next/link"
 import {A, Select} from "./style";
+import React from "react";
 
-const Listener = ({operators}) => {
+const Listener: React.FC<{ operators: any }> = ({operators}) => {
     return (
         <>
             {operators.map((p) =>

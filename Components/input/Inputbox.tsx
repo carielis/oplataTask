@@ -4,27 +4,28 @@ import {useState} from "react";
 import Loader from "../Loader/Loader";
 import Success from "../FinalOperations/success";
 import Failed from "../FinalOperations/failed";
-import {GlobalStyles} from "./../../style/GlobalStyle";
-import {string} from "prop-types";
 
-const InputBox = () => {
 
+const InputBox : React.FC = () => {
     enum status  {success = "success", failed  = "failed" , close   = "close"}
     const [isLoad,setLoad]  = useState<boolean>(false)
-    const [Api, SetApi] = useState<string>(status.close)
-
-    const  handleSubmit  =  (event) => {
+    const [Api, setApi] = useState<string>(status.close)
+    const [disabled, setDisabled] = useState<boolean>(false)
+    const  handleSubmit  =  (event: Event) => {
          event.preventDefault();
          const randomApi = Boolean(Math.round(Math.random()));
+         setDisabled(true)
          setLoad(true);
          if (randomApi) {
              setTimeout(() => {
-                 SetApi(status.success)
+                 setDisabled(false)
+                 setApi(status.success)
                  setLoad(false);
              }, 3000)
          } else {
              setTimeout(() => {
-                 SetApi(status.failed)
+                 setDisabled(false)
+                 setApi(status.failed)
                  setLoad(false);
              }, 3000)
          }
@@ -33,8 +34,7 @@ const InputBox = () => {
        <>
            {isLoad && <Loader/> }
            {(Api === status.success) && <Success /> }
-           {(Api === status.failed ) && <Failed set={() => SetApi(status.close)}/>}
-           <GlobalStyles />
+           {(Api === status.failed ) && <Failed set={() => setApi(status.close)}/>}
            <form  onSubmit={() => {handleSubmit(event); }}>
                <div className="block">
                    <InputMask
@@ -59,7 +59,7 @@ const InputBox = () => {
              
                     `}</style>
                </div>
-               {(Api === status.close) ? <button type="submit" >Пополнить</button> : <button type="submit" disabled>Пополнить</button> }
+               <button type="submit" disabled={disabled} >Пополнить</button>
            </form>
        </>
    )

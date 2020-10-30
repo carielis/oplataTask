@@ -8,8 +8,8 @@ export const Select = styled.div`
                     text-align: center;
                     border-radius: 10px;
                     background-color: #4d4d4d;
-                    margin: 20px;
-                    padding: 30px;
+                    margin-left: 30%;
+                    padding: 10px;
                     padding-top: 50px;
                     box-shadow: 0px 0px 23px -8px #000000;
                     margin-left: 0 auto;
@@ -17,16 +17,16 @@ export const Select = styled.div`
                     width: 200px;
                     height: 50px;
                     margin-left: auto;
-                    margin-left: auto;
-                    padding-top: 60px;
+                    margin-right: auto;
                     } 
 
                  :hover {
                     transition: 1s;
                     width: 110px;
                     height: 60px;
+                    margin-left: 29%;
                     padding-top: 60px;
-                    cursor: pointer;
+                    cursor: pointer;                  
                  }
 
 `

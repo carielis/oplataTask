@@ -1,7 +1,8 @@
 import { Overlay} from "./style";
 import Router from "next/router";
+import React from "react";
 
-let Success = () => {
+let Success : React.FC = () => {
     return (
         <>
             <Overlay>

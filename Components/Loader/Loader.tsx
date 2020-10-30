@@ -1,6 +1,7 @@
 import {Overlay,Position,Roller,Div} from "./style"
+import React from "react";
 
-const Loader = () => {
+const Loader : React.FC = () => {
     return (
         <>
             <Overlay>

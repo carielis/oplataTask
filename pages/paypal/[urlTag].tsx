@@ -1,30 +1,12 @@
 import {useRouter} from "next/router";
 import Header from "../../Components/Header/Header";
 import InputBox from "../../Components/input/Inputbox";
-import styled from "styled-components";
+import {Pages} from "../../style/GlobalStyle";
+import React from "react";
 
-const Pages = styled.div`
-    margin-left: auto;
-    margin-right: auto;
-    width: 20em;
-    text-align:center;
-    padding: 50px;
-    padding-bottom: 30px;
-    color: white;
-    background-color: #333333;
-    margin-top: 260px;
-    border-radius: 30px;
-    
-    @media screen and (max-device-width: 768px) {
-     margin-top: 340px;
-     width: 255px;
-     padding: 35px;
-     padding-left: 10px;
-    }
-    
-`;
 
-const inputPage = () => {
+
+const inputPage: React.FC = () => {
     const router = useRouter();
         return (
         <>

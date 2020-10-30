@@ -1,6 +1,7 @@
 import Router from "next/router";
 import {Overlay} from "./style"
-let Failed = ({set}) => {
+import React from "react";
+let Failed : React.FC<{set: any}> = ({set}) => {
     return (
         <>
          <Overlay>

@@ -1,7 +1,24 @@
-import { createGlobalStyle } from 'styled-components'
+import {createGlobalStyle}  from 'styled-components'
+import styled from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-         
+                
+              .Head {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: block;
+                color: #FFFFFF;
+                background-color: #333333;
+                padding: 10px;
+                font-size: 30px;
+              }
+              body {
+                margin: 0;
+                background-size: 100%;
+                background-color: #F8F8FF ;
+              }
               button {
                 border: 0;
                 text-decoration: none;
@@ -63,4 +80,48 @@ export const GlobalStyles = createGlobalStyle`
                             font-size: 19px;
                         }
                     }
+`
+export const Pages = styled.div`
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    text-align:center;
+    padding: 50px;
+    padding-bottom: 30px;
+    color: white;
+    background-color: #333333;
+    margin-top: 260px;
+    border-radius: 30px;
+    
+    @media screen and (max-device-width: 768px) {
+     margin-top: 340px;
+     width: 255px;
+     padding: 35px;
+     padding-left: 10px;
+    }
+    @media screen and (max-device-width: 768px)
+`;
+
+export const Container = styled.div`
+                margin-left: auto;
+                margin-right: auto;
+                display: grid;
+                grid-template-columns: 20em 20em 20em 20em;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 0px 0px; 
+                @media screen and (max-device-width: 768px) {
+                margin-top: 9em;
+                grid-template-columns: 20em;
+                }            
+                overflow: auto;
+                  
+`;
+
+export const Page = styled.div`
+               background-size: cover;
+               margin-top: 4em;
+               padding-left: 0px;       
+               @media screen and (max-device-height: 670px) {
+                margin-top: 3em;
+               }
 `

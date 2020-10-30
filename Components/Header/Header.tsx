@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
+import {GlobalStyles} from "../../style/GlobalStyle";
+import React from "react";
 
 const Header = ({title, children}) => {
     return (
@@ -12,30 +14,17 @@ const Header = ({title, children}) => {
                 <Link href="/"><a className="link">Платежная система</a></Link>
             </div>
             <div className="body">
+                <GlobalStyles />
                 {children}
             </div>
             <style jsx global>{`
-                .Head {
-                   position: fixed;
-                   top: 0;
-                   left: 0;
-                   width: 100%;
-                   display: block;
-                   color: #FFFFFF;
-                   background-color: #333333;
-                   padding: 10px;
-                   font-size: 30px;
-                }
+                
                 div {
                    font-family: 'Commissioner', sans-serif;
                    position: block;
                    
                 }
-                body {
-                margin: 0;
-                background-size: 100%;
-                background-color: #F8F8FF ;
-                }
+               
                 .link {
                     text-decoration: none;
                     color: #FFFFFF;
