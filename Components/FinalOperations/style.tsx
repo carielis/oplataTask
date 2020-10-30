@@ -13,14 +13,15 @@ export const Overlay = styled.div`
                     justify-content: center;
                     z-index: 10;
                     transition: opacity0 .2s ease-in;
-                    padding-top: 14em;
-                
+        
 `
 export const Position = styled.div`
-                
-                padding-top: 120px;
-                margin-left: auto;
-                margin-right: auto;
-                width: 16em;
+             padding-top: 14em;
+             @media screen and ( max-device-height: 634px) {
+              padding-top: 10em;
+             }
+             @media screen and ( max-device-height: 515px) {
+              padding-top: 5em;
+             }
 `
 

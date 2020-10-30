@@ -34,7 +34,7 @@ const InputBox : React.FC = () => {
        <>
            {isLoad && <Loader/> }
            {(Api === status.success) && <Success /> }
-           {(Api === status.failed ) && <Failed seter={setApi(status.close)}/>}
+           {(Api === status.failed ) && <Failed seter={() => setApi(status.close)}/>}
            <form  onSubmit={() => {handleSubmit(event);}}>
                <div className="block">
                    <InputMask

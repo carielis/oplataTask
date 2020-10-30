@@ -15,10 +15,13 @@ export const Overlay = styled.div`
 `
 
 export const Position = styled.div`
-                padding-top: 170px;
+                padding-top: 10em;
                 margin-left: auto;
                 margin-right: auto;
                 width: 16em;
+                @media screen and ( max-device-height: 537px) {
+                padding-top: 0;
+             }
 `
 
 export const Roller = styled.div `

@@ -1,4 +1,4 @@
-import { Overlay} from "./style";
+import {Overlay, Position} from "./style";
 import Router from "next/router";
 import React from "react";
 
@@ -6,10 +6,10 @@ let Success : React.FC = () => {
     return (
         <>
             <Overlay>
-                <div>
+                <Position>
                     Операция прошла успешно, деньги будут начислены в течении часа!
-                </div>
                 <div><button onClick={() => Router.replace('/')}>Принять</button></div>
+                </Position>
             </Overlay>
 
         </>

@@ -89,7 +89,7 @@ export const Pages = styled.div`
     width: 20em;
     text-align:center;
     padding: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     color: white;
     background-color: #333333;
     margin-top: 260px;
