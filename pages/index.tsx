@@ -3,8 +3,9 @@ import Header from "../Components/Header/Header";
 import React, {useState} from "react";
 import {Page, Container} from "../style/GlobalStyle";
 
+type operator  = { id: number, nameTag: string, urlTag: string};
+
 const Mains: React.FC = () => {
-    type operator  = { id: number, nameTag: string, urlTag: string};
     const [operators] = useState<operator[]>([
         {id: 1, nameTag: "МТС",      urlTag: "MTS"     },
         {id: 2, nameTag: "Билайн",   urlTag: "Beeline" },

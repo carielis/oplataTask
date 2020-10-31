@@ -13,24 +13,10 @@ const Header = ({title, children}) => {
             <div className="Head">
                 <Link href="/"><a className="link">Платежная система</a></Link>
             </div>
-            <div className="body">
+            <div>
                 <GlobalStyles />
                 {children}
             </div>
-            <style jsx global>{`
-                
-                div {
-                   font-family: 'Commissioner', sans-serif;
-                   position: block;
-                   
-                }
-               
-                .link {
-                    text-decoration: none;
-                    color: #FFFFFF;
-                }
-                
-            `}</style>
         </>
 
     )

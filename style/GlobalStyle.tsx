@@ -2,7 +2,8 @@ import {createGlobalStyle}  from 'styled-components'
 import styled from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-                
+
+
               .Head {
                 position: fixed;
                 top: 0;
@@ -21,6 +22,10 @@ export const GlobalStyles = createGlobalStyle`
                 background-color: #F8F8FF ;
                 min-height: 100px
               }
+              div {
+                font-family: 'Commissioner', sans-serif;
+                position: block;   
+              }              
               button {
                 border: 0;
                 text-decoration: none;
@@ -56,6 +61,10 @@ export const GlobalStyles = createGlobalStyle`
                 color: white;
                 transform: translateY(-7px);
               }
+              .link {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                }
               input {
                         color: white;
                         display: block;

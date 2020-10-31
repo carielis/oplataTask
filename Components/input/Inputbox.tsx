@@ -5,11 +5,11 @@ import Loader from "../Loader/Loader";
 import Success from "../FinalOperations/success";
 import Failed from "../FinalOperations/failed";
 
+enum status  {success = "success", failed  = "failed" , close   = "close"}
 
 const InputBox : React.FC = () => {
-    enum status  {success = "success", failed  = "failed" , close   = "close"}
     const [isLoad,setLoad]  = useState<boolean>(false)
-    const [Api, setApi] = useState<string>("close")
+    const [Api, setApi] = useState<status>(status.close)
     const [disabled, setDisabled] = useState<boolean>(false)
     const  handleSubmit  =  (event: Event) => {
          event.preventDefault();

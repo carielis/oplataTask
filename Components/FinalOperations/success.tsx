@@ -4,15 +4,12 @@ import React from "react";
 
 let Success : React.FC = () => {
     return (
-        <>
             <Overlay>
                 <Position>
                     Операция прошла успешно, деньги будут начислены в течении часа!
                 <div><button onClick={() => Router.replace('/')}>Принять</button></div>
                 </Position>
             </Overlay>
-
-        </>
     )
 }
 
