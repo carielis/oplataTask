@@ -59,7 +59,7 @@ export const GlobalStyles = createGlobalStyle`
                 background: #2EE59D;
                 box-shadow: 0 15px 20px rgba(46,229,157,.4);
                 color: white;
-                transform: translateY(-7px);
+                transform: translateY(-7px);     
               }
               .link {
                     text-decoration: none;
@@ -110,14 +110,13 @@ export const Pages = styled.div`
      padding: 35px;
      padding-left: 10px;
     }
-    @media screen and (max-device-width: 768px)
 `;
 
 export const Container = styled.div`
                 margin-left: auto;
                 margin-right: auto;
                 display: grid;
-                grid-template-columns: 20em 20em 20em 20em;
+                grid-template-columns: 25% 25% 25% 25%;
                 gap: 0px 0px; 
                 @media screen and (max-device-width: 768px) {
                 margin-top: 3.5em;

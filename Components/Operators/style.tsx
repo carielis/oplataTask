@@ -11,25 +11,28 @@ export const Select = styled.div`
                     margin-left: 30%;
                     padding: 10px;
                     padding-top: 50px;
-                    box-shadow: 0px 0px 23px -8px #000000;
+                    
                     margin-left: 0 auto;
                     @media screen and (max-device-width: 768px) {
-                    width: 200px;
-                    height: 50px;
-                    margin: 0 auto;
-                    margin-top: 30px;
-                    
-                
-                    
+                        width: 200px;
+                        height: 50px;
+                        margin: 0 auto;
+                        margin-top: 30px;
                     } 
 
                  :hover {
+                 box-shadow: 0px 0px 23px -3px #000000;
                     transition: 1s;
                     width: 110px;
                     height: 60px;
                     margin-left: 29%;
                     padding-top: 60px;
-                    cursor: pointer;                  
+                    cursor: pointer; 
+                    @media screen and (max-device-width: 768px) {
+                        margin: 0 auto;
+                        width: 210px;
+                        margin-top: 20px;
+                    }                 
                  }
 
 `
